@@ -16,6 +16,19 @@ const ValuesOne = () => {
   const fourthApresentation = [`Hi Isa.
   My name is Lara Campos Fernandes and my nickname is La`];
 
+  const questionWomen = [
+    [`What's her first name?`],
+    [`What's her middle name?`],
+    [`What's her last name?`],
+    [`What's her nickname?`],
+  ];
+  const questionMen = [
+    [`What's his first name?`],
+    [`What's his middle name?`],
+    [`What's his last name?`],
+    [`What's his nickname?`],
+  ];
+
   const studentsValue = [
     {
       image: image1,
@@ -46,7 +59,27 @@ const ValuesOne = () => {
             src={ item.image }
             alt="primeira"
           />
-          <p className="paragraph">{ item.apresentations }</p>
+          <span>
+            <p className="paragraph">{ item.apresentations }</p>
+            { item.image !== image2 && questionWomen.map((quest) => (
+              <ul>
+                <li className="question" key={ quest }>{ quest }</li>
+                <textarea
+                  type="textarea"
+                  placeholder="type you answer"
+                />
+              </ul>
+            )) }
+            { item.image === image2 && questionMen.map((questM) => (
+              <ul>
+                <li className="question" key={ questM }>{ questM }</li>
+                <textarea
+                  type="textarea"
+                  placeholder="type you answer"
+                />
+              </ul>
+            )) }
+          </span>
         </span>
       )) }
     </section>

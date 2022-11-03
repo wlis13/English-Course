@@ -26,3 +26,9 @@
 .paragraph {
   font-weight: 600;
 }
+
+.question {
+  font-weight: 600;
+  padding: 10px;
+  list-style-type: none;
+}

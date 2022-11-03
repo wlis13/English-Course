@@ -1,11 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import FirstPage from './pages/firstPage';
 
 function App() {
   return (
-    <div>
-      <FirstPage />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={ FirstPage } />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
