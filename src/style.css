@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.container {
+  font-family: 'Lato', sans-serif;
+}
+
+.image {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 4px rgb(165, 164, 164);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin: 10px;
+  box-shadow: 2px 2px 4px rgb(165, 164, 164);
+  display: flex;
+  padding: 5px;
+}
+
+.paragraph {
+  font-weight: 600;
+}
