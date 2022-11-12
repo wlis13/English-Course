@@ -31,3 +31,13 @@
 .card-question {
   display: block;
 }
+
+.check {
+  color: green;
+}
+
+.fix {
+  color: red;
+  font-size: 20pt;
+  font-weight: 800;
+}

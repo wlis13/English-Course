@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Context from './StudentContext';
 
 const StudentProvider = ({ children }) => {
-  const [firstApresentation, setFirstApresentation] = useState(
+  const [apresentation, setapresentation] = useState(
     [`Good morning, guys.
   I am a new student here and my name is Isabelle Santos Fonseca,
   and my nickname is Isa, and what are your names?`,
@@ -51,31 +51,20 @@ const StudentProvider = ({ children }) => {
     sixteenthValue: '',
   });
 
-  const [isCheck, setIsCheck] = useState(false);
-
-  const handleSubmit = () => {
-    if (valueQuestion.firstValue === "her name is Isabelle") {
-      setIsCheck(true)
-    }
-  }
-
   const handleChangeValue = ({ target }) => {
     const { name, value } = target;
     setValueQuestions((prevState) => ({ ...prevState, [name]: value }))
   }
 
   const contextProvider = {
-    firstApresentation,
+    apresentation,
     questWoman,
     questMan,
     valueQuestion,
-    isCheck,
-    setFirstApresentation,
+    setapresentation,
     setQuestWoman,
     setQuestMan,
     handleChangeValue,
-    setIsCheck,
-    handleSubmit,
   }
 
   return (

@@ -13,9 +13,16 @@ function FirstPage() {
     questWoman,
     questMan,
     handleChangeValue,
-    isCheck,
-    handleSubmit,
+    valueQuestion,
+    apresentation,
   } = useContext(Context);
+
+  const comparasons = {
+    c1: valueQuestion.firstValue === 'her name is Isabelle',
+    c2: valueQuestion.secondValue === 'her middlename is Santos',
+    c3: valueQuestion.thirdValue === 'her lastname is Fonseca',
+    c4: valueQuestion.fourthValue === 'her nickname is Isa',
+  }
 
   return (
     <div className="container">
@@ -33,31 +40,47 @@ function FirstPage() {
               alt="imagen do primeiro estudante"
             />
             <div className="card-question">
+              <h3>{ apresentation[0] }</h3>
               <p>{ questWoman[0] }</p>
               <textarea
                 name="firstValue"
                 onChange={ handleChangeValue }
                 placeholder="type you answer"
               />
-              { isCheck ? <FaCheck /> : <FiX /> }
+              { comparasons.c1
+                && <FaCheck className="check" /> }
+              { !comparasons.c1
+                && valueQuestion.firstValue !== '' && <FiX className="fix" /> }
               <p>{ questWoman[1] }</p>
               <textarea
                 name="secondValue"
                 onChange={ handleChangeValue }
                 placeholder="type you answer"
               />
+              { comparasons.c2
+                && <FaCheck className="check" /> }
+              { !comparasons.c2
+                && valueQuestion.secondValue !== '' && <FiX className="fix" /> }
               <p>{ questWoman[2] }</p>
               <textarea
                 name="thirdValue"
                 onChange={ handleChangeValue }
                 placeholder="type you answer"
               />
+              { comparasons.c3
+                && <FaCheck className="check" /> }
+              { !comparasons.c3
+                && valueQuestion.thirdValue !== '' && <FiX className="fix" /> }
               <p>{ questWoman[3] }</p>
               <textarea
                 name="fourthValue"
                 onChange={ handleChangeValue }
                 placeholder="type you answer"
               />
+              { comparasons.c4
+                && <FaCheck className="check" /> }
+              { !comparasons.c4
+                && valueQuestion.fourthValue !== '' && <FiX className="fix" /> }
             </div>
           </div>
         </section>
@@ -69,6 +92,7 @@ function FirstPage() {
               alt="imagen do primeiro estudante"
             />
             <div className="card-question">
+              <h3>{ apresentation[1] }</h3>
               <p>{ questMan[0] }</p>
               <textarea
                 name="fifthValue"
@@ -104,6 +128,7 @@ function FirstPage() {
               alt="imagen do primeiro estudante"
             />
             <div className="card-question">
+              <h3>{ apresentation[2] }</h3>
               <p>{ questWoman[0] }</p>
               <textarea
                 name="ninthValue"
@@ -139,6 +164,7 @@ function FirstPage() {
               alt="imagen do primeiro estudante"
             />
             <div className="card-question">
+              <h3>{ apresentation[3] }</h3>
               <p>{ questWoman[0] }</p>
               <textarea
                 name="thirteenthValue"
@@ -166,12 +192,12 @@ function FirstPage() {
             </div>
           </div>
         </section>
-        <button
+        {/* <button
           onClick={ handleSubmit }
           type="button"
         >
           verificar
-        </button>
+        </button> */}
       </div>
     </div >
   );
