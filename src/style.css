@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+* {
+  margin: 0;
+}
+
 .container {
   font-family: 'Lato', sans-serif;
+  background-color: rgb(38, 151, 243);
+}
+
+.header {
+  color: white;
+  padding: 5px;
+  text-align: center;
 }
 
 .image {
   width: 200px;
   height: 300px;
   margin: 10px;
-  border: 8px solid rgb(38, 151, 243);
+  border: 2px solid rgb(38, 151, 243);
   border-radius: 5px;
 }
 
@@ -22,6 +33,9 @@
   box-shadow: 2px 2px 4px rgb(165, 164, 164);
   display: flex;
   padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px white;
 }
 
 .card-container {
@@ -40,4 +54,61 @@
   color: red;
   font-size: 20pt;
   font-weight: 800;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 15pt;
+  font-weight: 600;
+  color: rgb(38, 151, 243);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    background-color: blueviolet;
+  }
+
+  .container p {
+    color: blueviolet;
+    font-size: 15pt;
+    font-weight: 900;
+    padding: 3px;
+  }
+
+  .container h3 {
+    font-size: 18pt;
+    color: blueviolet;
+    padding: 3px;
+  }
+
+  .container textarea {
+    width: 90%;
+    color: blueviolet;
+    font-size: 15pt;
+    font-weight: 900;
+  }
+
+  .section {
+    display: block;
+  }
+
+  .card-container {
+    display: block;
+    text-align: center;
+    background-color: rgb(199, 186, 211);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .card {
+    background-color: blueviolet;
+  }
+
+  .image {
+    border: 2px solid blueviolet;
+  }
+
+  .link {
+    color: white;
+  }
 }

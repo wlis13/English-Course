@@ -2,13 +2,15 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import StudentProvider from './context/StudentProvider';
 import FirstPage from './pages/firstPage';
+import SecondPage from './pages/secondPage';
 
 function App() {
   return (
     <StudentProvider>
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={ FirstPage } />
+          <Route exact path="/" component={ FirstPage } />
+          <Route exact path="/page2" component={ SecondPage } />
         </Switch>
       </BrowserRouter>
     </StudentProvider>
