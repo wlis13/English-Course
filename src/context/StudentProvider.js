@@ -51,6 +51,14 @@ const StudentProvider = ({ children }) => {
     sixteenthValue: '',
   });
 
+  const [isCheck, setIsCheck] = useState(false);
+
+  const handleSubmit = () => {
+    if (valueQuestion.firstValue === "her name is Isabelle") {
+      setIsCheck(true)
+    }
+  }
+
   const handleChangeValue = ({ target }) => {
     const { name, value } = target;
     setValueQuestions((prevState) => ({ ...prevState, [name]: value }))
@@ -61,10 +69,13 @@ const StudentProvider = ({ children }) => {
     questWoman,
     questMan,
     valueQuestion,
+    isCheck,
     setFirstApresentation,
     setQuestWoman,
     setQuestMan,
     handleChangeValue,
+    setIsCheck,
+    handleSubmit,
   }
 
   return (

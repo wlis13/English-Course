@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import '../style.css';
+import { FaCheck } from 'react-icons/fa'
+import { FiX } from "react-icons/fi";
 import image1 from '../images/image1.jpg';
 import image2 from '../images/image2.jpg';
 import image3 from '../images/image3.jpg';
@@ -11,6 +13,8 @@ function FirstPage() {
     questWoman,
     questMan,
     handleChangeValue,
+    isCheck,
+    handleSubmit,
   } = useContext(Context);
 
   return (
@@ -35,6 +39,7 @@ function FirstPage() {
                 onChange={ handleChangeValue }
                 placeholder="type you answer"
               />
+              { isCheck ? <FaCheck /> : <FiX /> }
               <p>{ questWoman[1] }</p>
               <textarea
                 name="secondValue"
@@ -161,6 +166,12 @@ function FirstPage() {
             </div>
           </div>
         </section>
+        <button
+          onClick={ handleSubmit }
+          type="button"
+        >
+          verificar
+        </button>
       </div>
     </div >
   );
