@@ -20,20 +20,20 @@ function FirstPage() {
 
   const comparasons = {
     c1: valueQuestion.firstValue === 'her name is Isabelle',
-    c2: valueQuestion.secondValue === 'her middlename is Santos',
-    c3: valueQuestion.thirdValue === 'her lastname is Fonseca',
+    c2: valueQuestion.secondValue === 'her middle name is Santos',
+    c3: valueQuestion.thirdValue === 'her last name is Fonseca',
     c4: valueQuestion.fourthValue === 'her nickname is Isa',
     c5: valueQuestion.fifthValue === 'his name is Daniel',
-    c6: valueQuestion.sixthValue === 'his middlename is Cory',
-    c7: valueQuestion.seventhValue === 'his lastname is Taylor',
+    c6: valueQuestion.sixthValue === 'his middle name is Cory',
+    c7: valueQuestion.seventhValue === 'his last name is Taylor',
     c8: valueQuestion.eighthValue === 'his nickname is Dan',
     c9: valueQuestion.ninthValue === 'her name is Jessica',
-    c10: valueQuestion.tenthValue === 'her middlename is Mendes',
-    c11: valueQuestion.eleventhValue === 'her lastname is Torres',
+    c10: valueQuestion.tenthValue === 'her middle name is Mendes',
+    c11: valueQuestion.eleventhValue === 'her last name is Torres',
     c12: valueQuestion.twelfthValue === "her don't have a nickname",
     c13: valueQuestion.thirteenthValue === 'her name is Lara',
-    c14: valueQuestion.fourteenthValue === 'her middlename is Campos',
-    c15: valueQuestion.fifteenthValue === 'her lastname is Fernandes',
+    c14: valueQuestion.fourteenthValue === 'her middle name is Campos',
+    c15: valueQuestion.fifteenthValue === 'her last name is Fernandes',
     c16: valueQuestion.sixteenthValue === 'her nickname is La',
   }
 
