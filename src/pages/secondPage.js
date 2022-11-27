@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import dates from '../util/Dates';
 import { FaCheck } from 'react-icons/fa';
-import { FiX } from "react-icons/fi";
+// import { FiX } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function SecondPage() {
   const audios = dates.filter((date) => date.audio !== null);
@@ -46,6 +47,9 @@ function SecondPage() {
         )) }
       </div>
       { verifyCheck() && <FaCheck className="check01" /> }
+      <div className="link-father">
+        <Link className="link-page2" to="/page1">{ '<-Return' }</Link>
+      </div>
     </div>
   );
 }

@@ -79,6 +79,7 @@
 @media only screen and (max-width: 700px) {
   .container {
     background-color: blueviolet;
+    height: 3220px;
   }
 
   .container p {
@@ -102,8 +103,9 @@
   }
 
   .container02 {
+    text-align: center;
     padding-top: 100px;
-    margin-left: 10px;
+    background-color: rgb(192, 162, 221);
   }
 
   .header02 {
@@ -139,6 +141,16 @@
 
   .link {
     color: white;
+    background-color: blueviolet;
+    text-align: center;
+  }
+
+  .link-father01 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .check01 {
@@ -155,5 +167,22 @@
   .audio {
     height: 80px;
     padding: 10px;
+  }
+
+  .link-page2 {
+    font-size: 20pt;
+    color: white;
+    padding: 20px;
+    background-color: blueviolet;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 5px;
+  }
+
+  .link-father {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 }

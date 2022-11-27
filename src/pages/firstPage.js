@@ -253,12 +253,20 @@ function FirstPage() {
             </div>
           </div>
         </section>
-        <Link
-          className="link"
-          to="/page2"
-        >
-          Next-Page
-        </Link>
+        <div className="link-father01">
+          <Link
+            className="link"
+            to="/"
+          >
+            Prev-Page
+          </Link>
+          <Link
+            className="link"
+            to="/page2"
+          >
+            Next-Page
+          </Link>
+        </div>
       </div>
     </div >
   );
