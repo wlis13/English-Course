@@ -101,6 +101,11 @@
     font-weight: 900;
   }
 
+  .container02 {
+    padding-top: 100px;
+    margin-left: 10px;
+  }
+
   .header02 {
     position: fixed;
     text-align: center;
@@ -137,8 +142,8 @@
   }
 
   .check01 {
-    left: 360px;
-    top: 105px;
+    left: 370px;
+    top: 195px;
     width: 30pt;
     height: 30pt;
   }

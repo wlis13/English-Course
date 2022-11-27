@@ -24,24 +24,27 @@ function SecondPage() {
 
   return (
     <div>
-      <h2 className="header02">listen to the audio and type correctly</h2>
-      { audios.map((audi, index) => (
-        <div>
-          <audio
-            className="audio"
-            id={ `audi${ index }` }
-            src={ audi.audio }
-            controls
-          >
-          </audio>
-          <input
-            className="input-value"
-            onChange={ handleChange }
-            id={ index }
-            placeholder="digite a frase"
-          />
-        </div>
-      )) }
+      <h2 className="header02">listen to the audio and type correctly <br /> ex: (Trophy-trophies)</h2>
+
+      <div className="container02">
+        { audios.map((audi, index) => (
+          <div>
+            <audio
+              className="audio"
+              id={ `audi${ index }` }
+              src={ audi.audio }
+              controls
+            >
+            </audio>
+            <input
+              className="input-value"
+              onChange={ handleChange }
+              id={ index }
+              placeholder="digite a frase"
+            />
+          </div>
+        )) }
+      </div>
       { verifyCheck() && <FaCheck className="check01" /> }
     </div>
   );
