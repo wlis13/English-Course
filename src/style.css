@@ -7,6 +7,7 @@
 .container {
   font-family: 'Lato', sans-serif;
   background-color: rgb(38, 151, 243);
+  height: 1500px;
 }
 
 .header {
@@ -58,9 +59,21 @@
 
 .link {
   text-decoration: none;
-  font-size: 15pt;
+  font-size: 20pt;
   font-weight: 600;
-  color: rgb(38, 151, 243);
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 2px white;
+  border-radius: 5px;
+}
+
+.check01 {
+  position: absolute;
+  top: 35px;
+  left: 495px;
+  color: green;
+  width: 20pt;
+  height: 20pt;
 }
 
 @media only screen and (max-width: 700px) {
@@ -88,6 +101,17 @@
     font-weight: 900;
   }
 
+  .header02 {
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+    font-size: 20pt;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: blueviolet;
+    z-index: 5;
+  }
+
   .section {
     display: block;
   }
@@ -110,5 +134,21 @@
 
   .link {
     color: white;
+  }
+
+  .check01 {
+    left: 360px;
+    top: 105px;
+    width: 30pt;
+    height: 30pt;
+  }
+
+  .input-value {
+    font-size: 20pt;
+  }
+
+  .audio {
+    height: 80px;
+    padding: 10px;
   }
 }
