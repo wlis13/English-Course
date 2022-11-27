@@ -30,8 +30,9 @@ function Login() {
 
   return (
     <div>
-      <form>
-        <label htmlFor="input-email">
+      <h1 className="header-login">Login</h1>
+      <form className="container-login">
+        <label htmlFor="input-email" className="input-login-email">
           <input
             data-testid="email-input"
             id="input-email"
@@ -41,7 +42,7 @@ function Login() {
             onChange={ handleChange }
           />
         </label>
-        <label htmlFor="input-senha">
+        <label className="input-login-senha" htmlFor="input-senha">
           <input
             data-testid="password-input"
             id="input-senha"
@@ -52,6 +53,7 @@ function Login() {
           />
         </label>
         <button
+          className="button-login"
           onClick={ handleClick }
           type="button"
           disabled={ isDesabled() }

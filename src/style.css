@@ -185,4 +185,26 @@
     margin-top: 40px;
     margin-bottom: 50px;
   }
+
+  .header-login {
+    text-align: center;
+    font-size: 40pt;
+  }
+
+  .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .input-login-email {
+    padding: 10px;
+    font-size: 30pt;
+  }
+
+  .input-login-senha {
+    padding: 10px;
+  }
 }
